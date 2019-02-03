@@ -21,10 +21,6 @@ layout: default
 <div class="container">
 	<div class="row">
         {% if site.sidebar == false %}
-        <div id = "music163player">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=521492516&auto=1&height=66">
-                </iframe>
-        </div>
 <!-- NO SIDEBAR -->
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
@@ -49,7 +45,11 @@ layout: default
                                 </a>
                             {% endif %}
         				{% endfor %}
-        			</div>
+                    </div>
+                    <div id = "music163player">
+                            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=521492516&auto=1&height=66">
+                            </iframe>
+                    </div>
                 </section>
                 {% endif %}
 
